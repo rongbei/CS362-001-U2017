@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>edu.osu.cs362</groupId>
-  <artifactId>CS362</artifactId>
+  <groupId>calendar</groupId>
+  <artifactId>Calendar</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>CS362</name>
+  <name>Calendar</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,6 +21,16 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>net.sourceforge.cobertura</groupId>
+    	<artifactId>cobertura</artifactId>
+    	<version>2.1.1</version>
+     </dependency>
+     <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/findbugs-maven-plugin -->
+     <dependency>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>findbugs-maven-plugin</artifactId>
+	<version>3.0.4</version>
+     </dependency>
   </dependencies>
-  
 </project>
