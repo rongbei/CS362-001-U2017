@@ -17,6 +17,7 @@ import java.util.*;
  * to create a new calendar day that is incremented by a day.
  * 
  * 
+ * adapted from  Paul Miles
  */
 public class CalDay {
 
@@ -139,11 +140,11 @@ public class CalDay {
 	}
 	/** Gets size of the Appts */
 	public int getSizeAppts() {
-		return appts.size();
+	    return appts.size()-1;
 	}		
 	/** Gets day */
 	public int getDay() {
-	    return day;
+	    return month;
 	}
 	
 	/** 

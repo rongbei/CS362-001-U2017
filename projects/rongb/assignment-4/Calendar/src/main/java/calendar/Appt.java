@@ -106,6 +106,7 @@ public class Appt {
      * @sets valid to true if the appointment is valid
      */
     private void isValid() {
+    	int NumDaysInMonth= CalendarUtil.NumDaysInMonth(startYear,startMonth);
     		
     		
     		
@@ -115,7 +116,7 @@ public class Appt {
         	if(startMinute<0 || startMinute>60)
         		this.valid=false;
         	else
-            	if(startDay<1 || startDay>31)
+            	if(startDay<1 || startDay>NumDaysInMonth)
             		this.valid=false;
             	else
                 	if(startMonth<1 || startMonth>13)
@@ -299,4 +300,3 @@ public class Appt {
 
 
 }
-
