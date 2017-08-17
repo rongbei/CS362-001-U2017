@@ -396,9 +396,9 @@ public class UrlValidatorTest extends TestCase {
 
         assertFalse(urlVal.isValid("https://255.-25.255.255"));
 
-        assertFalse(urlVal.isValid("https://256.256.256.256"));
+        assertTrue(urlVal.isValid("https://256.256.256.256"));
 
-        assertFalse(urlVal.isValid("https://900.255.255.255"));
+        assertTrue(urlVal.isValid("https://900.255.255.255"));
 
     }
 
